@@ -210,6 +210,25 @@
   .ship-step h3{font-size:19px; font-weight:500; text-transform:none; margin:10px 0 8px;}
   .ship-step p{color:var(--ink-dim); font-size:14.5px; margin:0;}
 
+  /* Dam growth strip */
+  .dam-strip{
+    display:flex; gap:1px; overflow-x:auto; background:var(--line);
+    margin-top:48px; -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+  }
+  .dam-card{
+    flex:0 0 240px; scroll-snap-align:start;
+    background:var(--bg-alt); display:flex; flex-direction:column;
+  }
+  .dam-card img{width:100%; aspect-ratio:3/4; object-fit:cover; display:block;}
+  .dam-card .cap{
+    padding:14px 16px; font-family:'JetBrains Mono', monospace; font-size:12px;
+    color:var(--ink-dim); line-height:1.5;
+  }
+  .dam-card .cap b{color:var(--ink); display:block; font-size:11px; letter-spacing:0.06em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:4px;}
+  @media (max-width:600px){ .dam-card{flex-basis:200px;} }
+
   /* Contact */
   .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
   @media (max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
@@ -250,6 +269,7 @@
     <div class="brand">DENALI <span>OVCHARKA</span></div>
     <ul class="navlinks">
       <li><a href="#breed">The Breed</a></li>
+      <li><a href="#dam">The Mother</a></li>
       <li><a href="#litters">Litters</a></li>
       <li><a href="#shipping">Shipping</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -339,6 +359,56 @@
         <li><span>Best fit</span><span>Rural property, experienced owners</span></li>
         <li><span>Health testing</span><span>Hips, elbows, cardiac on all parents</span></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section id="dam">
+  <div class="wrap">
+    <p class="eyebrow">The Dam</p>
+    <h2 style="font-size:clamp(30px,3.6vw,40px);">Meet the mother.</h2>
+    <p style="color:var(--ink-dim); max-width:60ch; margin-top:14px;">From a small pup underfoot to a full-grown guardian watching over the goats — and now, raising her own litter. Health-tested and even-tempered, she's the foundation of this kennel.</p>
+    <div class="dam-strip">
+      <div class="dam-card">
+        <img src="dam-1.jpg" alt="The mother as a young puppy indoors">
+        <div class="cap"><b>Puppy</b>Just a handful, still learning the house.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-2.jpg" alt="The mother as a puppy outdoors in winter">
+        <div class="cap"><b>Growing</b>Already at home outside, even in the cold.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-3.jpg" alt="The mother as a playful young pup">
+        <div class="cap"><b>All energy</b>Still all paws and fluff.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-4.jpg" alt="The mother as an adolescent with a child in the forest">
+        <div class="cap"><b>Filling out</b>Bigger every month, gentle the whole way.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-5.jpg" alt="The mother as a young adult in the woods">
+        <div class="cap"><b>Almost grown</b>Getting her adult coat and frame.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-6.jpg" alt="The mother resting indoors">
+        <div class="cap"><b>Settling in</b>Calm, watchful, unbothered.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-7.jpg" alt="The mother eating indoors as a young adult">
+        <div class="cap"><b>Full grown</b>Reaching her full adult size.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-8.jpg" alt="The mother as a mature adult on the property">
+        <div class="cap"><b>Mature guardian</b>A thick coat built for Alaska winters.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-9.jpg" alt="The mother watching over the goat herd">
+        <div class="cap"><b>On duty</b>Watching over the herd, exactly what the breed was built for.</div>
+      </div>
+      <div class="dam-card">
+        <img src="dam-10.jpg" alt="The mother nursing her August 2026 litter">
+        <div class="cap"><b>Now</b>Raising her August litter.</div>
+      </div>
     </div>
   </div>
 </section>
